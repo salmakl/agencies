@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@400;600&display=swap");
+:root {
+  direction: rtl;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  font-family: 'Changa', sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 70px;
+}
+
+nav .logo {
+  height: 65px;
+}
+
+nav .logo img {
+  height: 100%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  gap: 40px;
+}
+
+.menu h3 {
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #8DBD21;
+  border-color: #8DBD21;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #8DBD21;
+  border-color: #8DBD21;
+}
+
+.read {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+.main .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main .section-title {
+  font-size: 30px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.main .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main .column p {
+  color: #a8aeb3;
+  font-size: 17px;
+}
+
+.section h1 {
+  text-align: center;
+  margin: 60px;
+  font-size: 40px;
+}
+/*# sourceMappingURL=style.css.map */

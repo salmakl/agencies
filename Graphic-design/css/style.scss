@@ -3,13 +3,22 @@
 :root {
     direction:rtl;
 }
-$primary:#8DBD21;
+$primary:#007cdc;
+$secondary :#001344;
+$color:#047fdd;
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: 0;
     font-family: 'Changa', sans-serif;
+}
+p{
+    color: #a8aeb3;
+}
+h1{
+    color: $secondary;
 }
 nav {
     display: flex;
@@ -30,6 +39,7 @@ nav {
         justify-content: flex-end;
         li {
             list-style: none;
+            color:$secondary;
 
         }
       }
@@ -38,7 +48,14 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2{
+    color: $primary;
+}
 .menu{
     gap: 40px;
     h3{
@@ -61,10 +78,11 @@ a{
   
     &:hover {
       color: #fff;
-      background-color: $primary;
-      border-color: $primary;
+      background-color: $secondary;
+      border-color: $secondary;
     }
 }
+
 .read{
     padding: 15px 30px;
 font-size: 18px;
@@ -72,35 +90,142 @@ margin-top: 25px;
 }
 .main{
     margin-top: 60px;
-    .container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-    
-    }
+
     .section-title{
         font-size: 30px;
         line-height: 1.1;
         margin-bottom: 25px;
     }
-    .row {
-        display: flex;
-        gap: 30px;
-        align-items: center;
-      }
-      .column {
-        flex: 1;
+
         p{
-            color: #a8aeb3;
+            
             font-size: 17px;
         }
       }
+
+      .row {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+      }
+      .column {
+        flex: 1;}
+.advantages {
+    margin: 100px 0;
+        .section-title{
+        width: 100%;
+        margin-bottom: 55px;
+        p{
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 1.1;
+        }
+    }
+    h1{
+        text-align: center;
+        
+        font-size: 40px;
+
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        .card{
+            background-color: white;
+            border-radius: 1px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 5px gray;
+            margin: 0 20px;
+        img{
+            width: 80px;
+        }
+        p{
+            color: #a8aeb3;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    }
+
+    }
+    .choose{
+        margin-top: 70px;
+        h3{
+            color: $primary;
+        }
+      
+        .paragraph{
+            display: flex;
+            gap: 20px;
+            justify-content:center;
+            margin: 14px;
+            .first{
+                background-color: $primary;
+                padding: 10px 20px 10px 20px;
+                border-radius: 8px;
+                color: #FFF;
+                font-size:25px;
+            }
+            .text{
+                width:500px;
+            }
+        }
+ 
+}
+.boxes{
+   
+    margin-top: 100px;
+    background-color: #047fdd;
+    padding: 100px 0;
+    h1,h4{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+  
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .card{
+        background-color: white;
+        border-radius: 1px;
+        padding: 10px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 5px gray;
+        margin: 0 20px;
+        p{ 
+            font-size:50px;
+            color: $primary;
+
+        }
+        p:last-child {
+            font-size:15px;
+            color: black;
+          }
+}
+}
 }
 
-.section {
+.portfolio{
     h1{
         text-align: center;
         margin: 60px;
         font-size: 40px;
     }
-    }
+}

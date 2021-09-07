@@ -239,9 +239,14 @@ h2 {
   padding: 100px 0;
 }
 
+.boxes h1 {
+  font-size: 40px;
+}
+
 .boxes h1, .boxes h4 {
   text-align: center;
   margin-bottom: 30px;
+  color: #FFF;
 }
 
 .boxes .container {
@@ -298,9 +303,357 @@ h2 {
   color: black;
 }
 
-.portfolio h1 {
+.portfolio {
   text-align: center;
+  /* Add padding BETWEEN each column */
+  /* Create three equal columns that floats next to each other */
+  /* Clear floats after rows */
+  /* Content */
+  /* The "show" class is added to the filtered elements */
+  /* Style the buttons */
+}
+
+.portfolio h1 {
   margin: 60px;
   font-size: 40px;
+}
+
+.portfolio .row {
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .column {
+  margin-top: 100px;
+  display: none;
+  /* Hide all elements by default */
+}
+
+.portfolio .content {
+  width: 290px;
+  padding: 10px;
+}
+
+.portfolio .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  color: #001344;
+}
+
+.portfolio .btn:hover {
+  background-color: #007cdc;
+  color: white;
+}
+
+.portfolio .btn.active {
+  background-color: #007cdc;
+  color: white;
+}
+
+.partenaire {
+  margin-top: 100px;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 70px 0;
+  margin-bottom: 70px;
+}
+
+.partenaire h1 {
+  font-size: 40px;
+}
+
+.partenaire .row {
+  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partenaire .column {
+  padding: 20px;
+}
+
+.partenaire .column:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.packs {
+  text-align: center;
+}
+
+.packs h1 {
+  margin: 60px;
+  font-size: 40px;
+}
+
+.packs .section-title {
+  color: #001344;
+}
+
+.packs .row {
+  gap: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packs .tab {
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  padding: 30px 50px;
+  line-height: 0.8;
+  display: inline-block;
+  margin-left: -15px;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #eef1f7;
+  color: #a29db8;
+}
+
+.packs .tab.active {
+  color: #007cdc;
+  z-index: 1;
+  background: white;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: drop-shadow(0px -3px 2px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0px -3px 2px rgba(0, 0, 0, 0.05));
+}
+
+.packs .tab h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.packs .tab-content {
+  display: block;
+  border-radius: inherit;
+  padding: 50px 130px;
+  -webkit-box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+}
+
+.packs .tab-content #tab-item-2 {
+  display: block;
+}
+
+.packs .tab-content .tab-item {
+  display: none;
+}
+
+.packs .tab-content .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.packs .tab-content .row .column {
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+
+.packs .tab-content .row .column.selected {
+  border: 3px solid #007cdc;
+}
+
+.packs .card {
+  text-align: center;
+}
+
+.packs .card .card-header {
+  margin: 20px 0;
+  color: #464646;
+}
+
+.packs .card .card-header h5 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.packs .card .card-header h3 {
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  font-size: 54px;
+}
+
+.packs .card .card-body {
+  margin-bottom: 120px;
+}
+
+.packs .card .card-body ul {
+  margin: 30px 0;
+}
+
+.packs .card .card-body ul li {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  list-style: none;
+}
+
+.packs .card .card-btn a {
+  font-size: 16px;
+}
+
+.customers {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+.customers .btn1 {
+  border: 2px solid #007cdc;
+  padding: 5px;
+  cursor: pointer;
+  color: #007cdc;
+  font-weight: 900;
+}
+
+.customers .btn1:hover {
+  color: white;
+  background-color: #007cdc;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.customers .navigate {
+  text-align: center;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.customers h1 {
+  margin: 60px;
+  font-size: 40px;
+}
+
+.customers h3 {
+  color: #001344;
+  line-height: 1;
+}
+
+.customers h4 {
+  color: #a8a8a8;
+  font-weight: 400;
+}
+
+.customers p {
+  margin-top: 20px;
+}
+
+.customers .grp-msgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: top 25px;
+}
+
+.customers .box {
+  background-color: white;
+  border-radius: 1px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 4px gray;
+          box-shadow: 0px 0px 4px gray;
+  width: 40%;
+  margin: 0 20px;
+}
+
+.customers .box-img {
+  margin: 20px 0;
+  width: 60px;
+  position: relative;
+}
+
+.customers .box-img .img {
+  width: 100%;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+}
+
+footer {
+  background-color: #001344;
+  color: white;
+  padding: 70px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li h3 {
+  font-size: 25px;
+}
+
+footer .inputs {
+  margin: 10px 0 10px 0;
+}
+
+footer input {
+  width: 500px;
+  height: 60px;
+  padding: 10px;
+}
+
+footer .btn {
+  margin: 20px 0 0 0;
+}
+
+footer .row:last-child {
+  gap: 35px;
+}
+
+footer hr {
+  margin: 30px 0;
 }
 /*# sourceMappingURL=style.css.map */

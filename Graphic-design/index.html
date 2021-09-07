@@ -5,46 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    
     <title>Design</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="logo"/>
-            </a>
-          </div>
-          <ul class="menu">
-            <li>
-              <a href="#">
-               <h3>الرئيسية</h3> 
-              </a>
-            </li>
-            <li>
-              <a href="#">
-               <h3> من نحن </h3> 
-              </a>
-            </li>
-            <li>
-              <a href="#">
-               <h3>خدماتنا </h3> 
-              </a>
-            </li>
-       
-          </ul>
-          <ul>
-            <li>
-              <a href="#" style="display: block;">
-                <i data-feather="shopping-cart"></i>
-              </a>
-            </li>
-       
-            <li>
-              <a href="#" class="btn btn-primary"> إتصل بنا </a>
-            </li>
-          </ul>
-          
-    </nav>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo"/>
+        </a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#">
+           <h3>الرئيسية</h3> 
+          </a>
+        </li>
+        <li>
+          <a href="#">
+           <h3> من نحن </h3> 
+          </a>
+        </li>
+        <li>
+          <a href="#">
+           <h3>خدماتنا </h3> 
+          </a>
+        </li>
+   
+      </ul>
+      <ul>
+        <li>
+          <a href="#" style="display: block;">
+            <i data-feather="shopping-cart"></i>
+          </a>
+        </li>
+   
+        <li>
+          <a href="#" class="btn btn-primary"> إتصل بنا </a>
+        </li>
+      </ul>
+      
+</nav>
+</header>
     <section class="main">
         <div class="container">
    
@@ -73,7 +76,7 @@
       </section>
       <section class="advantages">
        <div class="section-title">
-            <h1>مميزاتنا</h1>
+            <h1>خدماتنا</h1>
             <p>هو نهج إبداعي يقوم به مصمم أو مجموعة من المصممين بناء على طلب العميل أو الزبون ويتعاون على تنفيذ معطياته المادية مجموعة من المنتجين من أجل إيصال رسالة معينة. </p>
        </div>
 
@@ -199,10 +202,612 @@
 
       <section class="portfolio">
         <h1>المحفظة الأخيرة</h1>
-      </section>
+        
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> عرض الكل</button>
+  <button class="btn" onclick="filterSelection('design')"> تصميمات</button>
+  <button class="btn" onclick="filterSelection('flyer')"> إعلانات</button>
+  <button class="btn" onclick="filterSelection('logo')"> الشعارات</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row container">
+  <div class="column design">
+    <div class="content">
+      <img src="images/hero1.svg" alt="Mountains" style="width:100%">
+      
+ 
+    </div>
+  </div>
+  <div class="column design">
+    <div class="content">
+    <img src="images/hero1.svg" alt="Lights" style="width:100%">
+      
+   
+    </div>
+  </div>
+  <div class="column design">
+    <div class="content">
+      <img src="images/hero1.svg" alt="Mountains" style="width:100%">
+      
+      
+    </div>
+  </div>
+  
+  <div class="column flyer">
+    <div class="content">
+      <img src="images/hero.svg" alt="Mountains" style="width:100%">
+      
+      
+    </div>
+  </div>
+  <div class="column flyer">
+    <div class="content">
+      <img src="images/hero.svg" alt="Mountains" style="width:100%">
+      
+      
+    </div>
+  </div>
+  <div class="column flyer">
+    <div class="content">
+      <img src="images/hero.svg" alt="Mountains" style="width:100%">
+      
+      
+    </div>
+  </div>
+
+  <div class="column logo">
+    <div class="content">
+      <img src="images/hero1.svg" alt="Mountains" style="width:100%">
+      
+      
+    </div>
+  </div>
+  <div class="column logo">
+    <div class="content">
+      <img src="images/hero1.svg" alt="Mountains" style="width:100%">
+      
+      
+    </div>
+  </div>
+  <div class="column logo">
+    <div class="content">
+      <img src="images/hero1.svg" alt="Mountains" style="width:100%">
+      
+      
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</section>
+
+<section class="packs">
+  <div class="container">
+    <div class="section-title">
+      <h1>الحزم المتاحة</h1>
+    </div>
+    <div class="row">
+      <div class="tabs">
+        <button
+          class="tab"
+          onclick="openTab(event, 'tab-item-1','splide1')"
+        >
+          <div>
+            <h4>أساسي</h4>
+            <p>كل ما تحتاج للبدأ في عالم التجارة</p>
+          </div>
+        </button>
+        <button
+          class="tab active"
+          onclick="openTab(event, 'tab-item-2','splide2')"
+        >
+          <div>
+            <h4>احترافي</h4>
+            <p>كل ما تحتاج للبدأ في عالم التجارة</p>
+          </div>
+        </button>
+        <button
+          class="tab"
+          onclick="openTab(event, 'tab-item-3','splide3')"
+        >
+          <div>
+            <h4>أساسي</h4>
+            <p>كل ما تحتاج للبدأ في عالم التجارة</p>
+          </div>
+        </button>
+      </div>
+      <div class="tab-content">
+        <div id="tab-item-1" class="tab-item">
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">300</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+            <div class="column selected">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">100</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">100</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-item-2" class="tab-item">
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">100</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+            <div class="column selected">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">100</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">100</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-item-3" class="tab-item">
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">200</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+            <div class="column selected">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">100</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-header">
+                  <h5>أساسي</h5>
+                  <h3 class="price">100</h3>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>تصوير مع عارضة ازياء</li>
+                    <li>البوم صور كامل</li>
+                    <li>تصوير مع عارضة ازياء</li>
+                  </ul>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn-primary">أطلب الآن</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="feedback customers" id="customers">
+  <div class="container ">
+    
+      <h1>ماذا يقول عملاؤنا </h1>
+      <br>
+  
+  
+      <div class="grp-msgs mySlides">
+          <div class="box">
+            <div class="box-img">
+              <img class="img" src="images/img.jpeg" alt="img user" />
+            </div>
+            <h3>حمزة بوشيخي</h3>
+            <h4>مصمم</h4>
+              <p>
+                الزبون ويتعاون على تنفيذ معطياته المادية مجموعة من المنتجين من أجل إيصال رسالة
+              </p>
+          
+            
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img class="img" src="images/img.jpeg" alt="img user" />
+            </div>
+            <h3>حمزة بوشيخي</h3>
+            <h4>مصمم</h4>
+              <p>
+                الزبون ويتعاون على تنفيذ معطياته المادية مجموعة من المنتجين من أجل إيصال رسالة
+              </p>
+              
+          </div>
+          <div class="box">
+              <div class="box-img">
+                <img class="img" src="images/img.jpeg" alt="img user" />
+              </div>
+              <h3>حمزة بوشيخي</h3>
+              <h4>مصمم</h4>
+              <p>
+                الزبون ويتعاون على تنفيذ معطياته المادية مجموعة من المنتجين من أجل إيصال رسالة
+              </p>
+            
+           
+          </div>
+      </div>
+  
+      <div class="grp-msgs mySlides">
+          <div class="box">
+            <div class="box-img">
+              <img class="img" src="images/img.jpeg" alt="img user" />
+            </div>
+            <h3>حمزة بوشيخي</h3>
+            <h4>مصمم</h4>
+              <p>
+                الزبون ويتعاون على تنفيذ معطياته المادية مجموعة من المنتجين من أجل إيصال رسالة
+              </p>
+          
+            
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img class="img" src="images/img.jpeg" alt="img user" />
+            </div>
+            <h3>حمزة بوشيخي</h3>
+            <h4>مصمم</h4>
+              <p>
+                الزبون ويتعاون على تنفيذ معطياته المادية مجموعة من المنتجين من أجل إيصال رسالة
+              </p>
+              
+          </div>
+          <div class="box">
+              <div class="box-img">
+                <img class="img" src="images/img.jpeg" alt="img user" />
+              </div>
+              <h3>حمزة بوشيخي</h3>
+              <h4>design</h4>
+              <p>
+                الزبون ويتعاون على تنفيذ معطياته المادية مجموعة من المنتجين من أجل إيصال رسالة
+              </p>
+            
+           
+          </div>
+      </div>
+      <div class="navigate">
+        <a class="btn1" onclick="plusDivs(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+        <a class="btn1" onclick="plusDivs(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></a>
+      </div>
+  </section>
+<section class="partenaire">
+  <h1>شركاؤنا</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/logo.png"  >
+      </div>
+      <div class="column">
+        <img src="images/logo.png"  >
+      </div>
+      <div class="column">
+        <img src="images/logo.png"  >
+      </div>
+      <div class="column">
+        <img src="images/logo.png"  >
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="row">
+    <div class="column">
+      <div>
+        <img src="images/logo.png" alt="">
+        <p>استشارات العلامات التجارية و</p>
+      </div>
+      <div>
+        <h3>      تواصل        </h3>
+        <p>
+          204-207 ، برجي HB التوأم ،<br>
+  
+  نيتاجي سوباش بليس ، بيتامبورا ،<br>
+  
+  نيودلهي - 110034 ،<br>
+  الهند
+        </p>
+      </div>
+
+
+
+<div>
+  <p>
+    Onedesign ، 3015 ،<br>
+
+برج الموسى 2 ،<br>
+
+شارع الشيخ زايد ،
+
+دبي الامارات العربية المتحدة 
+  </p>
+    </div>
+    
+<div>
+ <p>
+  +91-836-814-5354 <br>
+
+  hello@onedesignlabs.com
+ </p>
+</div>
+
+
+
+  </div>
+  <div class="column">
+    <div class="row">
+      <div class="column">
+        <p>في Onedesign ، نعتقد أنه لا توجد حدود لما يمكن أن تفعله العلامة التجارية من خلال العمل على نفسها أثناء العمل أيضًا مع عملائها. مع الاتجاه الصحيح ، يمكن لأي شخص تغيير العالم ، تصميم واحد في كل مرة </p>
+      </div>
+      <div class="column">
+        <ul >
+          <li>
+            <a href="#">
+             <h3>الرئيسية</h3> 
+            </a>
+          </li>
+          <li>
+            <a href="#">
+             <h3> من نحن </h3> 
+            </a>
+          </li>
+          <li>
+            <a href="#">
+             <h3>خدماتنا </h3> 
+            </a>
+          </li>
+     
+        </ul>
+      </div>
+      
+    </div>
+    <hr>
+    <h3>ابقى على تواصل</h3>
+
+    <div class="inputs"><input type="text" placeholder="الاسم"></div>
+    <div class="inputs"><input type="text" placeholder="البريد الإلكتروني"></div>
+    <div class="inputs"><input type="text" placeholder="الهاتف"></div>
+    <div class="inputs"><input type="text" placeholder="Name"></div>
+   
+    <a href="" class="btn btn-primary">إرسال</a>
+
+ 
+    <hr>
+<div class="row">
+  <div class="column">
+    <h3>موقع</h3>
+  
+    <p>يطلق عليه اسم "المكتب" هو مجرد تيار رئيسي للغاية. لقد بنينا بيئة مستدامة من حولنا حيث نتنفس ونعيد الابتكار ونخلق.
+    
+      الشروط والأحكام | سياسة خاصة</p>
+      
+   </div>
+   <div class="column">
+    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.027890614125!2d-5.787213322491708!3d35.77469123023418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b809e09791061%3A0x5c28df43a7304310!2sMcDonald&#39;s!5e0!3m2!1sen!2sma!4v1631017748520!5m2!1sen!2sma" width="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+   </div>
+</div>
+
+
+
+    </div>
+   
+  </div>
+  <hr>
+  </div>
+</footer>
+
 
     <script>
         feather.replace()
+
+        
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+    // packages tab
+    function openTab(evt, tab) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-item");
+    sliders = document.querySelectorAll(".splide");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tab");
+
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(tab).style.display = "block";
+    evt.currentTarget.className += " active";
+
+  }
+  var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs((slideIndex += n));
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "flex";
+}
+
+
     </script>
 </body>
 </html>

@@ -516,6 +516,9 @@ footer{
   color: white;
   padding: 70px;
   position: relative;
+  .row{
+    align-items: unset;
+  }
   .column1{
     position: sticky;
     top: 0;

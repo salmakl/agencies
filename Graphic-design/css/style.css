@@ -628,6 +628,12 @@ footer {
   position: relative;
 }
 
+footer .row {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
 footer .column1 {
   position: -webkit-sticky;
   position: sticky;

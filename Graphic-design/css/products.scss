@@ -11,12 +11,15 @@ $grey:#a8aeb3;
 .products{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
     margin-top:60px;
     margin-bottom: 60px;
     .product{
-        width: 350px;
+        width: 260px;
+        img{
+            width: 100%;
+        }
         p{
             color: $primary;
          
@@ -27,8 +30,44 @@ $grey:#a8aeb3;
     }
 }
 .single{
+    
     margin-top: 60px;
     .column1{
-        flex: 3;
+        flex: 2;
+        img{
+            width: 100%;
+        }
     }
+    .column2{
+        background: aliceblue;
+        padding: 45px;
+    }
+
+    ul{
+        margin: 20px 15px;
+        // list-style: disclosure-closed;
+        
+        li{
+            color: $grey;
+        }
+
+    }
+    p{
+        color: $secondary;
+        font-size:  25px;
+    }
+
+    .about{
+        margin: 50px 0;
+        p{
+           
+            color: $grey;
+            font-size:15px;
+        }
+        .column1{
+            flex: 0 1 60%;
+            
+        }
+    }
+
 }

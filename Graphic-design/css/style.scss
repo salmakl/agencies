@@ -6,6 +6,7 @@
 $primary:#007cdc;
 $secondary :#001344;
 $color:#047fdd;
+$grey:#a8aeb3;
 
 
 *{
@@ -15,7 +16,7 @@ $color:#047fdd;
     font-family: 'Changa', sans-serif;
 }
 p{
-    color: #a8aeb3;
+    color: $grey;
 }
 h1{
     color: $secondary;
@@ -514,6 +515,12 @@ footer{
   background-color:$secondary;
   color: white;
   padding: 70px;
+  position: relative;
+  .column1{
+    position: sticky;
+    top: 0;
+    height: 100%;
+  }
 
   li{
     list-style: none;

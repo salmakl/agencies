@@ -625,6 +625,14 @@ footer {
   background-color: #001344;
   color: white;
   padding: 70px;
+  position: relative;
+}
+
+footer .column1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100%;
 }
 
 footer li {

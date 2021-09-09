@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@400;600&display=swap");
+:root {
+  direction: rtl;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.products .product {
+  width: 350px;
+}
+
+.products .product p {
+  color: #007cdc;
+}
+
+.products .product p:last-child {
+  color: #a8aeb3;
+}
+
+.single {
+  margin-top: 60px;
+}
+
+.single .column1 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+/*# sourceMappingURL=products.css.map */
